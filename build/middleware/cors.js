@@ -3,7 +3,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.corsMiddleware = void 0;
 const ACCEPTED_ORIGINS = [
     'http://localhost:4200',
-    'http://localhost:9876'
+    'http://localhost:9876',
+    'https://bookapp2222.netlify.app/'
 ];
 const corsMiddleware = ({ acceptedOrigins = ACCEPTED_ORIGINS } = {}) => ({
     origin: (origin, callback) => {
