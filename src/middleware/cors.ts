@@ -3,7 +3,7 @@ import cors from "cors"
 const ACCEPTED_ORIGINS = [
   'http://localhost:4200',
   'http://localhost:9876',
-  'https://bookapp2222.netlify.app/'
+  'https://bookapp2222.netlify.app'
 ]
 
 export const corsMiddleware = ({ acceptedOrigins = ACCEPTED_ORIGINS } = {}): cors.CorsOptions => ({
